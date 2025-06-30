@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha no topo para não ficar centralizado verticalmente se a lista crescer muito */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#item-input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+#item-input:focus {
+    border-color: #007bff;
+}
+
+#add-button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+#add-button:hover {
+    background-color: #0056b3;
+}
+
+#shopping-list {
+    list-style: none;
+    padding: 0;
+}
+
+#shopping-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+}
+
+#shopping-list li.purchased {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #e9e9e9;
+}
+
+.item-text {
+    flex-grow: 1;
+    cursor: pointer; /* Indica que o texto é clicável para marcar/desmarcar */
+}
+
+.item-actions {
+    display: flex;
+    gap: 8px; /* Espaçamento entre os botões de ação */
+}
+
+.item-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.item-actions .remove-button {
+    color: #dc3545;
+}
+
+.item-actions .remove-button:hover {
+    background-color: #f8d7da;
+}
+
+/* Estilo para o ícone de marcar como comprado (opcional, se você quiser usar um ícone em vez de apenas clicar no texto) */
+/* .item-actions .toggle-purchased-button {
+    color: #28a745;
+}
+
+.item-actions .toggle-purchased-button:hover {
+    background-color: #d4edda;
+} */

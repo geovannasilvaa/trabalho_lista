@@ -3,7 +3,7 @@ body {
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinha no topo para não ficar centralizado verticalmente se a lista crescer muito */
+    align-items: flex-start; 
     min-height: 100vh;
     margin: 0;
     padding: 20px;
@@ -84,12 +84,12 @@ h1 {
 
 .item-text {
     flex-grow: 1;
-    cursor: pointer; /* Indica que o texto é clicável para marcar/desmarcar */
+    cursor: pointer;
 }
 
 .item-actions {
     display: flex;
-    gap: 8px; /* Espaçamento entre os botões de ação */
+    gap: 8px; 
 }
 
 .item-actions button {
@@ -110,11 +110,4 @@ h1 {
     background-color: #f8d7da;
 }
 
-/* Estilo para o ícone de marcar como comprado (opcional, se você quiser usar um ícone em vez de apenas clicar no texto) */
-/* .item-actions .toggle-purchased-button {
-    color: #28a745;
-}
 
-.item-actions .toggle-purchased-button:hover {
-    background-color: #d4edda;
-} */
